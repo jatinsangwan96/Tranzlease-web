@@ -334,7 +334,7 @@ span {
 	top: 0;
 	height: 100%;
 	width: 100vw;
-	background-color: rgba(8, 8, 8, 0.267);
+	background-color: rgba(0, 0, 0, 0.05);
 	z-index: -1;
 }
 .panel2 {
@@ -353,18 +353,22 @@ span {
 	font-size: 1.8rem;
 }
 .home2panel2 .sectionTitle h1 {
+	color: #680096;
 	font-size: 7rem;
 	font-weight: 500;
 }
 .home2panel3 .sectionTitle h1 {
+	color: #680096;
 	font-size: 7rem;
 	font-weight: 500;
 }
 .home2panel4 .sectionTitle h1 {
+	color: #680096;
 	font-size: 7rem;
 	font-weight: 500;
 }
 .home2panel5 .sectionTitle h1 {
+	color: #680096;
 	font-size: 7rem;
 	font-weight: 500;
 }
@@ -588,7 +592,7 @@ span {
 
 /* Home-page-04 */
 #home4 {
-	background-color: rgba(8, 8, 8, 0.267);
+	background-color: #fff;
 }
 .home4 {
 	min-height: 100vh;
