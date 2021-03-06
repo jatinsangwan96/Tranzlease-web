@@ -376,16 +376,99 @@ span {
 
 /* Home-page-03 */
 .wrapper3 {
-	background: linear-gradient(135deg,#680096, #f2a51e);
-	background-size: 400% 400%;
-	overflow: hidden;
-	animation: gradient 10s ease infinite;
+	background: #680096;
     display: flex;
     flex-wrap: nowrap;
     height: 100%;
     width: 600%;
     /* z-index: 1; */
 }
+.effect3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.effect3 li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 10px;
+	height: 10px;
+	animation: animate 25s linear infinite;
+	bottom: -150px;
+}
+.effect3 .coin-size {
+	transform: scale(0.5);
+}
+.effect3 li:nth-child(1) {
+	left: 25%;
+	width: 10px;
+	height: 10px;
+	animation-delay: 0s;
+}
+.effect3 li:nth-child(2) {
+	left: 10%;
+	width: 10px;
+	height: 10px;
+	animation-delay: 2s;
+	animation-duration: 12s;
+}
+.effect3 li:nth-child(3) {
+	left: 70%;
+	width: 10px;
+	height: 10px;
+	animation-delay: 4s;
+}
+.effect3 li:nth-child(4) {
+	left: 40%;
+	width: 10px;
+	height: 10px;
+	animation-delay: 0s;
+	animation-duration: 18s;
+}
+.effect3 li:nth-child(5) {
+	left: 65%;
+	width: 10px;
+	height: 10px;
+	animation-delay: 0s;
+}
+.effect3 li:nth-child(6) {
+	left: 75%;
+	width: 10px;
+	height: 10px;
+	animation-delay: 3s;
+}
+.effect3 li:nth-child(7) {
+	left: 35%;
+	width: 10px;
+	height: 10px;
+	animation-delay: 7s;
+}
+.effect3 li:nth-child(8) {
+	left: 50%;
+	width: 10px;
+	height: 10px;
+	animation-delay: 15s;
+	animation-duration: 45s;
+}
+.effect3 li:nth-child(9) {
+	left: 20%;
+	width: 10px;
+	height: 10px;
+	animation-delay: 2s;
+	animation-duration: 35s;
+}
+.effect3 li:nth-child(10) {
+	left: 85%;
+	width: 10px;
+	height: 10px;
+	animation-delay: 0s;
+	animation-duration: 11s;
+}
+
 /* .wrapper3::after {
 	content: '';
 	position: absolute;
@@ -900,7 +983,16 @@ span {
 	  background-position: 0% 50%;
 	}
 }
-
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-1000px) rotate(720deg);
+		opacity: 0;
+	}
+}
 @-webkit-keyframes animate-positive {
 	0% {
 	  width: 0%;
