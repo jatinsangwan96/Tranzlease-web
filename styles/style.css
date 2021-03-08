@@ -560,7 +560,7 @@ span {
 	text-transform: none;
 	text-align: center;
 }
-.progress-bar-1 {
+.home3panel2 .progress-bar-1 {
 	padding: 5px 200px;
 	margin-top: 20px;
 	border: 5px solid white;
@@ -571,7 +571,7 @@ span {
 	font-weight: 600;
 	color: #0d5ae1;
 }
-.progress-bar-1::after {
+.home3panel2 .progress-bar-1::after {
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -582,7 +582,7 @@ span {
 	mix-blend-mode: difference;
 	animation: progress-1 3s forwards;
 }
-.progress-bar-2 {
+.home3panel3 .progress-bar-2 {
 	padding: 5px 200px;
 	margin-top: 20px;
 	border: 5px solid white;
@@ -593,7 +593,7 @@ span {
 	font-weight: 600;
 	color: #0d5ae1;
 }
-.progress-bar-2::after {
+.home3panel3 .progress-bar-2::after {
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -604,7 +604,7 @@ span {
 	mix-blend-mode: difference;
 	animation: progress-2 3s forwards;
 }
-.progress-bar-3 {
+.home3panel4 .progress-bar-3 {
 	padding: 5px 200px;
 	margin-top: 20px;
 	border: 5px solid white;
@@ -615,7 +615,7 @@ span {
 	font-weight: 600;
 	color: #0d5ae1;
 }
-.progress-bar-3::after {
+.home3panel4 .progress-bar-3::after {
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -626,7 +626,7 @@ span {
 	mix-blend-mode: difference;
 	animation: progress-3 3s forwards;
 }
-.progress-bar-4 {
+.home3panel5 .progress-bar-4 {
 	padding: 5px 200px;
 	margin-top: 20px;
 	border: 5px solid white;
@@ -637,7 +637,7 @@ span {
 	font-weight: 600;
 	color: #0d5ae1;
 }
-.progress-bar-4::after {
+.home3panel5 .progress-bar-4::after {
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -648,7 +648,7 @@ span {
 	mix-blend-mode: difference;
 	animation: progress-4 3s forwards;
 }
-.progress-bar-5 {
+.home3panel6 .progress-bar-5 {
 	padding: 5px 200px;
 	margin-top: 20px;
 	border: 5px solid white;
@@ -659,7 +659,7 @@ span {
 	font-weight: 600;
 	color: #0d5ae1;
 }
-.progress-bar-5::after {
+.home3panel6 .progress-bar-5::after {
 	content: "";
 	position: absolute;
 	height: 100%;
