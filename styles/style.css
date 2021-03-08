@@ -560,117 +560,117 @@ span {
 	text-transform: none;
 	text-align: center;
 }
-.progress-bar {
+.progress-bar-1 {
+	padding: 5px 200px;
+	margin-top: 20px;
+	border: 5px solid white;
+	letter-spacing: 2px;
 	position: relative;
-	border: #fff solid 5px;
-	width: 300px;
-	height: 20px;
-	vertical-align: middle;
-	overflow: hidden;
-	margin: 30px auto;
-	font-size: 15px;
+	background-color: #fff;
+	font-size: 2rem;
 	font-weight: 600;
-	/* box-shadow: 0 4px 10px -5px rgba(0, 0, 0, 0.397); */
-	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.308);
-	transition: ease;
+	color: #0d5ae1;
 }
-.progress-bar:hover {
-	box-shadow: none;
-	transition: ease-in;
-}
-.progress-bar .bar {
+.progress-bar-1::after {
+	content: "";
 	position: absolute;
+	height: 100%;
+	width: 10%;
+	left: 0;
 	top: 0;
-	height: 100%;
-	overflow: hidden;
+	background-color: #0d5ae1;
+	mix-blend-mode: difference;
+	animation: progress-1 3s forwards;
 }
-.home3panel2 .progress-bar .positive {
-	background: #f2a51e;
-	left: 0;
-	width: 10%;
-	-webkit-animation: animate-positive 1s;
-	animation: animate-positive 1s;
+.progress-bar-2 {
+	padding: 5px 200px;
+	margin-top: 20px;
+	border: 5px solid white;
+	letter-spacing: 2px;
+	position: relative;
+	background-color: #fff;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #0d5ae1;
 }
-.home3panel2 .progress-bar .negative {
-	background:#fff;
-	right: 0;
-	width: 90%;
-	-webkit-animation: animate-negative 1s;
-	animation: animate-negative 1s;
-}
-.home3panel3 .progress-bar .positive {
-	background:#f2a51e;
-	left: 0;
-	width: 43%;
-	-webkit-animation: animate-positive 1s;
-	animation: animate-positive 1s;
-}
-.home3panel3 .progress-bar .negative {
-	background:#fff;
-	right: 0;
-	width: 57%;
-	-webkit-animation: animate-negative 1s;
-	animation: animate-negative 1s;
-}
-.home3panel4 .progress-bar .positive {
-	background:#f2a51e;
-	left: 0;
-	width: 43%;
-	-webkit-animation: animate-positive 1s;
-	animation: animate-positive 1s;
-}
-.home3panel4 .progress-bar .negative {
-	background:#fff;
-	right: 0;
-	width: 57%;
-	-webkit-animation: animate-negative 1s;
-	animation: animate-negative 1s;
-}
-.home3panel5 .progress-bar .positive {
-	background:#f2a51e;
-	left: 0;
-	width: 10%;
-	-webkit-animation: animate-positive 1s;
-	animation: animate-positive 1s;
-}
-.home3panel5 .progress-bar .negative {
-	background:#fff;
-	right: 0;
-	width: 90%;
-	-webkit-animation: animate-negative 1s;
-	animation: animate-negative 1s;
-}
-.home3panel6 .progress-bar .positive {
-	background:#f2a51e;
-	left: 0;
-	width: 90%;
-	-webkit-animation: animate-positive 1s;
-	animation: animate-positive 1s;
-}
-.home3panel6 .progress-bar .negative {
-	background:#fff;
-	right: 0;
-	width: 10%;
-	-webkit-animation: animate-negative 1s;
-	animation: animate-negative 1s;
-}
-.progress-bar .bar span {
+.progress-bar-2::after {
+	content: "";
 	position: absolute;
-	padding-top: 5px;
-	display: block;
-	width: 300px;
 	height: 100%;
-	text-align: center;
-	font-size: 15px;
-}
-.progress-bar .bar.positive span {
+	width: 45%;
 	left: 0;
-	color: #fff;
+	top: 0;
+	background-color: #0d5ae1;
+	mix-blend-mode: difference;
+	animation: progress-2 3s forwards;
 }
-.progress-bar .bar.negative span {
-	right: 0;
-	color: #f2a51e;
+.progress-bar-3 {
+	padding: 5px 200px;
+	margin-top: 20px;
+	border: 5px solid white;
+	letter-spacing: 2px;
+	position: relative;
+	background-color: #fff;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #0d5ae1;
 }
+.progress-bar-3::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 45%;
+	left: 0;
+	top: 0;
+	background-color: #0d5ae1;
+	mix-blend-mode: difference;
+	animation: progress-3 3s forwards;
+}
+.progress-bar-4 {
+	padding: 5px 200px;
+	margin-top: 20px;
+	border: 5px solid white;
+	letter-spacing: 2px;
+	position: relative;
+	background-color: #fff;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #0d5ae1;
+}
+.progress-bar-4::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 10%;
+	left: 0;
+	top: 0;
+	background-color: #0d5ae1;
+	mix-blend-mode: difference;
+	animation: progress-4 3s forwards;
+}
+.progress-bar-5 {
+	padding: 5px 200px;
+	margin-top: 20px;
+	border: 5px solid white;
+	letter-spacing: 2px;
+	position: relative;
+	background-color: #fff;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #0d5ae1;
+}
+.progress-bar-5::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 10%;
+	left: 0;
+	top: 0;
+	background-color: #0d5ae1;
+	mix-blend-mode: difference;
+	animation: progress-5 3s forwards;
+}
+
 /* End-of-home-page-03 */
 
 /* Home-page-04 */
@@ -993,26 +993,62 @@ span {
 		opacity: 0;
 	}
 }
-@-webkit-keyframes animate-positive {
+@keyframes progress-1 {
 	0% {
-	  width: 0%;
+	  width: 0;
 	}
-}
-@keyframes animate-positive {
-	0% {
-	  width: 0%;
-	}
-}
-@-webkit-keyframes animate-negative {
-	0% {
+	40% {
 	  width: 100%;
 	}
-}
-@keyframes animate-negative {
-	0% {
-	  width: 100%;
+	100% {
+	  width: 10%;
 	}
 }
+@keyframes progress-2 {
+	0% {
+	  width: 0;
+	}
+	40% {
+	  width: 100%;
+	}
+	100% {
+	  width: 47%;
+	}
+}
+@keyframes progress-3 {
+	0% {
+	  width: 0;
+	}
+	40% {
+	  width: 100%;
+	}
+	100% {
+	  width: 45%;
+	}
+}
+@keyframes progress-4 {
+	0% {
+	  width: 0;
+	}
+	40% {
+	  width: 100%;
+	}
+	100% {
+	  width: 10%;
+	}
+}
+@keyframes progress-5 {
+	0% {
+	  width: 0;
+	}
+	40% {
+	  width: 100%;
+	}
+	100% {
+	  width: 90%;
+	}
+}
+
 
 @keyframes cross11 {
 	0% {
