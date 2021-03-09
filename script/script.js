@@ -60,16 +60,27 @@ function handleWindowResize() {
 gsap.registerPlugin(ScrollTrigger);
 
 const scrollEffect = (pnl, wpr) => {
-    let sections = gsap.utils.toArray(pnl);
-    gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
+    const panels = gsap.utils.toArray(pnl);
+    let maxWidth = 0;
+
+    const getMaxWidth = () => {
+        maxWidth = 0;
+        panels.forEach((panel) => {
+            maxWidth += panel.offsetWidth;
+        });
+    };
+    getMaxWidth();
+    ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
+
+    gsap.to(panels, {
+        x: () => `-${maxWidth - window.innerWidth}`,
         ease: "none",
         scrollTrigger: {
             trigger: wpr,
             pin: true,
-            scrub: 1,
-            snap: 1 / (sections.length - 1),
-            end: () => "+=" + document.querySelector(wpr).offsetWidth
+            scrub: true,
+            end: () => `+=${maxWidth / 3}`,
+            invalidateOnRefresh: true
         }
     });
 }

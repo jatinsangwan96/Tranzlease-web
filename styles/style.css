@@ -6,7 +6,7 @@ html {
 	overflow-x: hidden!important;
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
-	scroll-behavior: smooth;
+	scroll-behavior: smooth!important;
   	font-weight: 500;
 }
 .container {
@@ -40,7 +40,7 @@ p {
 	height: auto;
 }
 #navigation .navigation {
-    min-height: 12vh;
+    min-height: 10vh;
 }
 #navigation .nav-bar {
     display: flex;
@@ -258,6 +258,9 @@ span {
 /* End-of-home-page-01 */
 
 /* Home-page-02 */
+#home {
+	background: #e5e0f0;
+}
 #home2 .effect2 .circle img {
     position: absolute;
     transform: translate(1075px, 190px) scale(0.20);
@@ -319,57 +322,67 @@ span {
 	animation: star4 3s infinite;
 	animation-delay: 1s;
 }
-.wrapper2 {
-    background-color: none;
-    display: flex;
-    flex-wrap: nowrap;
-    height: 100%;
-    width: 500%;
-    z-index: 1;
+#home2 .wrapper2 {
+	display: flex;
+	flex-wrap: nowrap;
+	height: 100vh;
+	width: 500%;
 }
-.wrapper2::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
+.wrapper2 .panel2 {
+	height: 100vh;
+}
+.home2section1 {
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 100vw;
-	background-color: rgba(0, 0, 0, 0.05);
-	z-index: -1;
+	height: 100vh;
 }
-.panel2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
+.home2section2 {
+	width: 100vw;
+	height: 100vh;
 }
-.home2panel1 .sectionTitle h1 {
+.home2section3 {
+	width: 100vw;
+	height: 100vh;
+}
+.home2section4 {
+	width: 100vw;
+	height: 100vh;
+}
+.home2section5 {
+	width: 100vw;
+	height: 100vh;
+}
+.home2section1 .sectionTitle h1 {
 	color: #680096;
-    font-weight: 500;
-    font-size: 7rem;
-}
-.home2panel1 .sectionContent p {
-	font-weight: 500;
-	font-size: 1.8rem;
-}
-.home2panel2 .sectionTitle h1 {
-	color: #680096;
-	font-size: 7rem;
-	font-weight: 500;
-}
-.home2panel3 .sectionTitle h1 {
-	color: #680096;
-	font-size: 7rem;
+	margin-top: -20px;
+	font-size: 7.5rem;
 	font-weight: 500;
 }
-.home2panel4 .sectionTitle h1 {
+.home2section1 .sectionContent p {
+	margin-top: 5px;
+}
+.home2section2 .sectionTitle h1 {
 	color: #680096;
-	font-size: 7rem;
+	font-size: 5.7rem;
 	font-weight: 500;
 }
-.home2panel5 .sectionTitle h1 {
+.home2section3 .sectionTitle h1 {
 	color: #680096;
-	font-size: 7rem;
+	font-size: 5.7rem;
+	font-weight: 500;
+}
+.home2section4 .sectionTitle h1 {
+	color: #680096;
+	font-size: 5.7rem;
+	font-weight: 500;
+}
+.home2section5 .sectionTitle h1 {
+	color: #680096;
+	font-size: 5.7rem;
 	font-weight: 500;
 }
 /* End-of-home-page-02 */
@@ -770,7 +783,7 @@ span {
 
 /* Contact-page */
 #contact {
-	background:linear-gradient(135deg, #680096, #f2a51e)	
+	background:linear-gradient(#680096, #1f1f12)	
 }
 #contact .container {
 	min-height: 90vh;
@@ -786,7 +799,6 @@ span {
 	color: #fff;
 }
 #contact .footer {
-	/* background:linear-gradient(135deg, #680096, #f2a51e); */
 	min-height: 10vh;
 	display: flex;
 	align-items: center;
@@ -1167,7 +1179,7 @@ span {
 		display: inline-block;
 	}
 	#navigation .nav-list ul li a {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 	#navigation .nav-list ul a:after {
 		display: none;
