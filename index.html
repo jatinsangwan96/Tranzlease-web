@@ -38,14 +38,38 @@
     <!-- End-of-navigation -->
     <!-- Home-page-01 -->
     <section id="home1">
-        <div class="effect1">
-            <div class="line1"></div>
-            <div class="line2"></div>
-        </div>
-        <div class="effect2">
-            <div class="line1"></div>
-            <div class="line2"></div>
-        </div>
+        <svg class="top" width="600" height="400">
+            <defs>
+                <filter id="glow">
+                    <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
+                    <femerge>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="SourceGraphic"></femergenode>
+                    </femerge>
+                </filter>
+            </defs>
+            <line class="line1" x1="0" y1="187.05" x2="504" y2="20.78"></line>
+            <line class="line2" x1="37.52" y1="197.64" x2="473.87" y2="0"></line>
+            <polygon class="polygon" points="18.29,249.41 142.16,180.4 24.94,306.77"></polygon>
+        </svg>
+        <svg class="bottom" width="600" height="400">
+            <defs>
+                <filter id="glow">
+                    <fegaussianblur class="blur" result="coloredBlur" stddeviation="4"></fegaussianblur>
+                    <femerge>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="SourceGraphic"></femergenode>
+                    </femerge>
+                </filter>
+            </defs>
+            <line class="line1" x1="0" y1="187.05" x2="504" y2="20.78"></line>
+            <line class="line2" x1="37.52" y1="197.64" x2="473.87" y2="0"></line>
+            <polygon class="polygon" points="18.29,249.41 142.16,180.4 24.94,306.77"></polygon>
+        </svg>
         <div class="container">
             <div class="wrap">
                 <div class="line">
