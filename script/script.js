@@ -56,39 +56,72 @@ function handleWindowResize() {
 }
 // End-of-home-text-effect-01
 
-// Scrolling-effect
+// Horizontal-scrolling-animation
 gsap.registerPlugin(ScrollTrigger);
+const horizontalScroll = (pnl, wpr) => {
+    let sections = gsap.utils.toArray(pnl);
 
-const scrollEffect = (pnl, wpr) => {
-    const panels = gsap.utils.toArray(pnl);
-    let maxWidth = 0;
-
-    const getMaxWidth = () => {
-        maxWidth = 0;
-        panels.forEach((panel) => {
-            maxWidth += panel.offsetWidth;
-        });
-    };
-    getMaxWidth();
-    ScrollTrigger.addEventListener("refreshInit", getMaxWidth);
-
-    gsap.to(panels, {
-        x: () => `-${maxWidth - window.innerWidth}`,
+    gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
         ease: "none",
         scrollTrigger: {
             trigger: wpr,
             pin: true,
-            scrub: true,
-            end: () => `+=${maxWidth / 3}`,
-            invalidateOnRefresh: true
+            scrub: 1,
+            snap: 1 / (sections.length - 1),
+            end: () => `+=${document.querySelector(wpr).offsetWidth / 3}`
         }
     });
 }
+horizontalScroll(".panel2", ".wrapper2");
+horizontalScroll(".panel3", ".wrapper3");
+// End-of-horizontal-scrolling-animation
 
-scrollEffect(".panel2", ".wrapper2");
-scrollEffect(".panel3", ".wrapper3");
-// End-of-scrolling-effect
+// Progress-circle
+const progress = (progressCircle, value) => {
 
-// Home-page-02-effect
-// gsap.fromTo('.circle', { x: })
-// End-of-hame-page-02-effect
+    var circle = new ProgressBar.Circle(progressCircle, {
+        color: '#aaa',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 10,
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        text: {
+            autoStyleContainer: false
+        },
+        from: {
+            color: '#f2a51e',
+            width: 4
+        },
+        to: {
+            color: '#f2a51e',
+            width: 4
+        },
+        // Set default step function for all animate calls
+        step: function (state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            circle.path.setAttribute('stroke-width', state.width);
+
+            var value = Math.round(circle.value() * 100);
+            if (value === 0) {
+                circle.setText('');
+            } else {
+                circle.setText(`${value}%`);
+            }
+
+        }
+    });
+    circle.text.style.fontFamily = '"Montserrat", sans-serif';
+    circle.text.style.fontSize = '3rem';
+
+    circle.animate(value);  // Number from 0.0 to 1.0 
+
+}
+progress(progressCircle1, 0.10);
+progress(progressCircle2, 0.45);
+progress(progressCircle3, 0.45);
+progress(progressCircle4, 0.10);
+progress(progressCircle5, 0.90);
+// End-of-progress-circle
